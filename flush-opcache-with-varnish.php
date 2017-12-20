@@ -32,11 +32,9 @@ function fov_do_opcache_flush() {
 
 	if( function_exists('flush_opcache_reset') ) {
 		flush_opcache_reset();
-		trigger_error( 'Flushed with Flush Opcache' );
 	} else {
 		if( function_exists( 'opcache_reset' ) ) {
 			opcache_reset();
-			trigger_error( 'Flushed with native opcache_reset();' );
 		}
 	}
 }
