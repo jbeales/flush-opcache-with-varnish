@@ -4,7 +4,7 @@ Tags: varnish, opcache, cache
 Requires at least: 3.0.1
 Tested up to: 4.9.1
 Requires PHP: 5.5.0
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: Apache 2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
  
