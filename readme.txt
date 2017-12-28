@@ -37,6 +37,10 @@ No.
 
 _If_ [WP Opcache](https://wordpress.org/plugins/flush-opcache/) is installed it will handle the actual flushing.
 
+== Support ==
+
+Please request support in [this plugin's support forum](https://wordpress.org/support/plugin/flush-opcache-with-varnish) on wordpress.org. This way there is a public record of solutions that work for people.
+
 == Contributing ==
 
 Please submit issues and Pull Requests to [the Github repository](https://github.com/jbeales/flush-opcache-with-varnish/issues).
