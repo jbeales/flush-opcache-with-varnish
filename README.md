@@ -9,6 +9,7 @@ Flush Opcache with Varnish automatically flushes the PHP Opcache when the "Empty
 
 If the [WP Opcache](https://wordpress.org/plugins/flush-opcache/) plugin is installed it is used to flush the opcache to let the opcache be re-warmed according to your WP Opcache settings, (and you can turn off WP Opcache's "Flush PHP Opcache" button from the Admin toolbar).
 
+If [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) is installed then the WP Super Cache cache will be cleared as well.
  
 ## Installation
  
@@ -30,11 +31,22 @@ No.
 
 _If_ [WP Opcache](https://wordpress.org/plugins/flush-opcache/) is installed it will handle the actual flushing.
 
+### Does the _WP Super Cache_ plugin need to be installed to use this plugin?
+
+No.
+
+_If_ [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) is instlled and active its cache will be cleared in addition to the Varnish and Opcode caches.
+
+
 ## Contributing
 
 Please submit issues and Pull Requests to [the Github repository](https://github.com/jbeales/flush-opcache-with-varnish/issues).
  
 ## Changelog
+
+### 1.1
+January 11, 2018
+* Added clearing the WP Super Cache cache, if it exists.
  
 ### 1.0
 * First release version of Flush Opcache with Varnish.
