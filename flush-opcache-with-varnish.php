@@ -76,11 +76,28 @@ Text Domain: jb-fov
 
 function fov_do_opcache_flush() {
 
+	// Flush the opcache
 	if( function_exists('flush_opcache_reset') ) {
 		flush_opcache_reset();
 	} else {
 		if( function_exists( 'opcache_reset' ) ) {
 			opcache_reset();
+		}
+	}
+
+	// Clear WP Super Cache if it exists, (the Varnish cache is being cleared,
+	// so there's no reason to keep a second page cache around).
+	if( function_exists( 'wp_cache_clean_cache' ) ) {
+		global $file_prefix;
+		if( !empty( $file_prefix ) ) {
+
+			// doesn't clear multisite cache. 
+			// That would be wp_cache_clean_cache( $file_prefix, true );
+			// But I'm not sure how to know if we're trying to clear a single-site
+			// Varnish cache or multi-site Varnish cache, so we're doing single-site 
+			// for now.
+			wp_cache_clean_cache($file_prefix);
+
 		}
 	}
 }
