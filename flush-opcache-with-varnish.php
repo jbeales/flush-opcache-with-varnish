@@ -4,7 +4,7 @@
 Plugin Name: Flush Opcache with Varnish
 Plugin URI: 
 Description: Automatically flush the PHP opcache when you click the "Purge Cache" button created by Varnish HTTP Purge.
-Version: 1.0.0
+Version: 1.1.0
 Author: John Beales
 Author URI: http://johnbeales.com
 License: http://www.apache.org/licenses/LICENSE-2.0
