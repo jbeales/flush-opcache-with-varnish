@@ -1,6 +1,6 @@
 # Flush Opcache with Varnish Flush
 
-This is a [WordPress](https:/wordpress.org) plugin to automatically flush PHP's Opcache when the manually purging Varnish with Mika Epstein's excellent [Varnish HTTP Cache](https://wordpress.org/plugins/varnish-http-purge/) plugin. This way we only have to click one button to clear both the Varnish & Opcache caches.
+This is a [WordPress](https:/wordpress.org) plugin to automatically flush PHP's Opcache and clear the WP Super Cache cache, (if it exists), when the manually purging Varnish with Mika Epstein's excellent [Varnish HTTP Cache](https://wordpress.org/plugins/varnish-http-purge/) plugin. This way we only have to click one button to clear both the Varnish & Opcache caches.
 
 
 ## Description
