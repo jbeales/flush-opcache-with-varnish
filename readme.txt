@@ -4,7 +4,7 @@ Tags: varnish, opcache, cache
 Requires at least: 3.0.1
 Tested up to: 4.9.1
 Requires PHP: 5.5.0
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: Apache 2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
  
@@ -54,9 +54,12 @@ Please submit issues and Pull Requests to [the Github repository](https://github
 
 == Changelog ==
 
-= 1.1.1 =
+= 1.1.2 =
 * Released January 13, 2018
 * Updated Readme files to correct display issues.
+
+= 1.1.1 =
+* Version Number Skipped.
 
 = 1.1 =
 * Released January 11, 2018
